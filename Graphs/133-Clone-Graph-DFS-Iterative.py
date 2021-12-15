@@ -40,4 +40,6 @@ class Solution:
                 # in the neighbors of the cloned node, append the cloned neighbor
                 visited[curr].neighbors.append(visited[neighbor])
 
+        # Time Complexity: O(V+E) (vertex + edges, we visit all of them onde)
+        # Space Complexity: O(V) (we stack all vertices plus we store a copy of each in visited)
         return visited[node]
